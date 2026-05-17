@@ -22,6 +22,12 @@ export default defineConfig({
         "src/server/**/*.test.js",
         "src/server/db/**",
       ],
+      thresholds: {
+        lines: 60,
+        functions: 60,
+        branches: 60,
+        statements: 60,
+      },
     },
 
     // Global test timeout
